@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link, a:visited {
+  color:lightblue;
+}
+a:hover, a:active {
+  color:yellow;
+}
+</style>
+</head>
+<body>
+<h2>CSS LINKS</h2>
+<p>When setting the style for several link states, there are some order rules:
+<ul>
+<li>a:hover MUST come after a:link and a:visited</li>
+<li>a:active MUST come after a:hover</li>
+</ul>
+</p>
+<p><b><a href="http://www.weather.com/" target="_blank">Weather Report</a></b></p>
+<p><b><a href="https://www.github.com/" target="_blank">Visit Github!</a></b></p>
+<p><b><a href="https://www.yahoo.com/" target="_blank">Visit Yahoo!</a></b></p>
+</body>
+</html>

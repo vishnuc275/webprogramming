@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {
+  text-decoration:none;
+  color:red;
+}
+a:visited {
+  text-decoration:none;
+  color:green;
+}
+a:hover {
+  text-decoration:underline;
+  color:hitpink;
+}
+a:active {
+  text-decoration:underline;
+  color:blue;
+}
+p {
+  color:purple;
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+<p><b><a href="http://www.weather.com/" target="_blank">Weather Report</a></b></p>
+<p><b><a href="https://www.github.com/" target="_blank">Visit Github!</a></b></p>
+<p><b><a href="https://www.yahoo.com/" target="_blank">Visit Yahoo!</a></b></p>
+<p>When setting the style for several link states, there are some order rules:
+<ul>
+<li>a:hover MUST come after a:link and a:visited</li>
+<li>a:active MUST come after a:hover</li>
+</ul>
+</p>
+</body>
+</html>
