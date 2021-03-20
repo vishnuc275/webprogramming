@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+
+<h2>Check Largest of three numbers</h2>
+<br>
+<br>
+<label>enter first integer : 
+<input type="text" id="int1" ></label>
+<br><br>
+<label>enter second integer : 
+<input type="text" id="int2" ></label>
+<br><br>
+<label>enter third integer : 
+<input type="text" id="int3" ></label>
+<br><br>
+<button onclick="largest()">Find</button>
+<p id="x"></p>
+
+<script>
+function largest() {
+var a = document.getElementById("int1").value;
+var b = document.getElementById("int2").value;
+var c = document.getElementById("int3").value;
+var p = parseFloat(a)
+var q = parseFloat(b)
+var r = parseFloat(c)
+if (p > q && p > r) { 	
+document.getElementById("x").innerHTML = a + " is the largest";
+}
+else if(q > p && q > r)
+{
+document.getElementById("x").innerHTML = b + " is the largest";
+}
+else{
+document.getElementById("x").innerHTML = c + " is the largest";
+}
+}
+</script>
+
+</center>
+</body>
+</html>

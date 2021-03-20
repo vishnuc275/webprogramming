@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+
+<h2>Check if a multiple of 3 or 7</h2>
+<br>
+<br>
+<label>enter any number : 
+<input type="text" id="num"></label>
+<button onclick="ismultiple()">Check</button>
+<p id="a"></p>
+
+<script>
+function ismultiple() {
+var n = document.getElementById("num").value;
+var t = parseInt(n)%3;
+var s = parseInt(n)%7;
+if (t == 0 || s==0) {
+document.getElementById("a").innerHTML = n + " is a multiple of 3 or 7"
+}
+else
+{
+document.getElementById("a").innerHTML = n + " is not a multiple of 3 or 7"
+}
+}
+</script>
+
+</center>
+</body>
+</html>
